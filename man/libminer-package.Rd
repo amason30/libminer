@@ -12,6 +12,7 @@ Provides functions for learning about libraries on your local drive.
 Useful links:
 \itemize{
   \item \url{https://github.com/amason30/libminer}
+  \item \url{https://amason30.github.io/libminer/}
   \item Report bugs at \url{https://github.com/amason30/libminer/issues}
 }
 
