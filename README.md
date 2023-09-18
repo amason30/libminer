@@ -28,4 +28,12 @@ optionally with the total sizes, use `lib_summaary()`.
 ``` r
 library(libminer)
 ## basic example code
+
+lib_summary()
+#>                                                                                        Library
+#> 1                         /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library
+#> 2 /private/var/folders/yj/9dzgt3y51fbf33b3qvfn1crc0000gr/T/RtmpJ2zQFj/temp_libpath9f2748b06b36
+#>   n_packages
+#> 1        275
+#> 2          1
 ```

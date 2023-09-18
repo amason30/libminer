@@ -36,4 +36,6 @@ To get a count of installed packages in each of your libraries, optionally with 
 ```{r example}
 library(libminer)
 ## basic example code
+
+lib_summary()
 ```
