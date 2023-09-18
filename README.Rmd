@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # libminer
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/amason30/libminer/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/amason30/libminer/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of libminer is to provide the user with an overview of your R library setup. It is a toy package created as a part of the posit::conf(2023) and not meant for serious use!
