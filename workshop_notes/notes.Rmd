@@ -1,0 +1,59 @@
+---
+title: "Package Development Workshop notes"
+author: "Allison R. Mason"
+date: "2023-09-18"
+output: pdf_document
+---
+
+What libraries do we have?
+```{r}
+.libPaths()
+```
+
+I have one, but common to have 2.
+
+Packages with compiled code are usually stored as binary and has code (fortran, c, etc) that is not compiled - this means you need to compile that code locally and you may not have all the machinery to do this so R will ask if you want to install a prior verson from source and use this instead.
+
+Recommend turning off restore .RData for package development, so you have a new workspace to play with the package
+
+```{r, include=FALSE}
+usethis::use_devtools() # this will silently autoload devtools on R startup
+
+# packages for package development:
+  library(devtools)
+  library(roxygen2)
+  library(testthat)
+  library(knitr)
+  library(pkgdown) # for package website
+```
+
+# Create package with devtools
+```{r}
+# create_package("~/Desktop/libminer")
+# commented out, as this only needs to be run once
+```
+
+# Initiate a git repository for the packaage
+```{r}
+# git vaccinate will help with protecting you from yourselff by adding global .gitignore
+
+# git_sitrep() # this will show you your gobal git status/setup
+
+# use_git() # commented out, as this only needs to be run once
+```
+
+# Create the first function
+```{r}
+use_r("lib-summary")
+```
+
+The use_r() will create a new .R file in the /R with the name specified.
+
+# now how to get the functions into memory from the source
+```{r}
+load_all()
+```
+
+The load_all() will take the source code and load all the functions into R memory.
+
+
